@@ -1,0 +1,591 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    /* justify-content: space-evenly; */
+    background-color: white;
+    position: sticky; 
+    top: 0;
+    padding-left: 120px;
+}
+.nav-bar-left{
+    margin-left: -40px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-m{
+    display: flex;
+    padding-left: 170px;
+
+}
+.nav-main{
+    margin-left: 10px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    color: #38434f;
+}
+.nav-main-item{
+    margin-right: 25px;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-main-item:hover{
+    color: black;
+}
+.nav-main-item i{
+    font-size: 23px;
+    
+}
+#nav-small1{
+    font-size: 25px;
+}
+#nav-small{
+    font-size: 25px;
+    
+}
+
+.nav-main-item h4{
+    font-size: 12px;
+    font-family: apple-system;
+}
+#work{
+    margin-left: 30px;
+}
+.nav-bar-left img{
+    
+    width: fit-content;
+    margin: 8px 0px 8px 0px;
+}
+#left-main{
+    border-left: 1px solid lightgray;
+}
+.input{
+
+    display: flex;
+
+    background-color: #e8f3ff;
+    
+    align-items: center;
+    margin: 8px;
+    border-radius: 5px;
+    width: 260px;
+    padding: 0px 5px;
+
+
+
+}
+.input-bar{
+    width: 250px;
+    text-decoration: none;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    height: 33px;
+    background-color: #e8f3ff;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* main -------------------------------------------------*/
+
+.main{
+    padding: 25px 110px;
+    background-color: #f3f2ef;
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    position: absalute;
+    
+    
+    
+
+}
+
+.main-left{
+    display: flex;
+    width: 16.5%;
+    padding: 0;
+    /* border: 1px solid lightgrey ; */
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: transparent;
+    height: fit-content;
+    position: sticky;
+    top: -335px;
+   
+
+    
+    
+
+}
+.top{
+    width: 100%;
+    padding: 0;
+    align-items: center;
+}
+.img-left{
+  
+   background-color:white;
+   text-align: center;
+   padding-bottom: 15px;
+}
+.img-left h4{
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin:10px 0 10px 0;
+    font-size: 1.1rem;
+    color: #1b1a1a;
+  
+}
+.img-left h6{
+    font-family: apple-system;
+   
+    font-size: 12px;
+    color: #7e7c78;
+}
+.img-left img{
+    font-size: 75px;
+    
+    margin: 10px;
+    margin-top: -38px;
+    
+    border-radius: 60px;
+    /* margin-left: 31%; */
+   
+}
+
+.main-left-top{
+    width: 100%;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.cover{
+    width: 100%;
+    height: 56px;
+    background-color: rgb(42, 88, 42);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.leftber-item{
+    padding: 11px 7px 13px 5px;
+    background-color: white;
+    border-top : 1px solid lightgray;
+    padding-left: 10px;
+
+}
+.connections{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#connect{
+    display: flex;
+    
+
+}
+body{
+    padding-right: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+#gnet{
+    display: flex;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+.leftber-item h3{
+    color: #5e5b5b;
+    font-size: 12px;
+    font-family: apple-system;
+}
+.leftber-item h4{
+    color: #585353;
+    font-size: 13px;
+    font-family: apple-system;
+}
+.bottom-left{
+    background-color:white;
+    margin-top: 10px;
+
+    border-radius: 10px;
+}
+.bottom-left h3{
+    color: rgb(85, 147, 241);
+    font-family: apple-system;
+}
+.bottom-items{
+    padding-left: 10px;
+    padding-top: 13px;
+    font-size: 10px;
+    
+}
+#add-icon-div{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8px;
+}
+#add-icon-div i{
+    font-size: 15px;
+    color: rgb(136, 135, 135);
+}
+a{
+    text-decoration: none;
+}
+.left-end{
+    margin-top: 9px;
+    text-align: center;
+    padding: 14px;
+    color: #696666;
+    font-size: 15px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 1px solid lightgray;
+}
+.main-body{
+    background-color: transparent;
+    width: 545px;
+    margin-left: 25px;
+}
+
+
+
+.main-right{
+    background-color: yellow;
+    width: 310px;
+    margin-left: 22px;
+}
+.main-body-top{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    border-radius: 10px;
+}
+.body-top-input{
+    align-items: center;
+    display: flex;
+    padding: 10px 15px 10px 10px;
+    border-radius: 10px;
+}
+.body-top-input img{
+
+    font-size: 55px;
+    margin: 0;
+    margin-right: 10px;
+    margin-left:6px;
+}
+.body-top-input input{
+    flex: 1;
+    height: 25px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    padding: 10px 15px;
+}
+.body-top-icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 29px 0px 29px;
+    align-items: center;
+    border-radius: 10px;
+}
+.body-top-icons i{
+    font-size: 21px;
+}
+.fa-image{
+    color: lightblue;
+}
+.fa-youtube{
+    color: lightgreen;
+}
+.fa-calendar{
+    color: gold;
+
+}
+.body-top-icon{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}.body-top-icon h3{
+   
+    font-size: 15px;
+    margin-left: 10px;
+    color: gray;
+    font-family: apple-system;
+}
+.divider{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    background-color: transparent;
+    padding: 10px 0px 5px 0px;
+    color: gray;
+}
+.line{
+    flex: 1;
+    padding: 7px 0px 0px 0px;
+}
+.left-content{
+    display: flex;
+    
+
+}
+.left-content h3{
+    font-size: 13px;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: rgb(68, 63, 63);
+    font-family: apple-system;
+
+}
+.left-content h4{
+    font-size: 13px;
+    margin-left: 8px;
+    font-family: apple-system;
+
+}
+/* ------------------------------------------------------------------------ */
+.card{
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.card-body{
+background-color: white;
+margin: 0px 0px;
+border-radius: 10px;
+padding: 5px 15px;
+
+}
+
+.card-body-top{
+    display: flex;
+
+    justify-content: space-between;
+    padding: 5px 0px;
+    align-items: center;
+
+
+}
+.card-body-top h4 {
+    font-size: 13px;
+    font-family: apple-system;
+}
+.card-body-top h3{
+    font-size: 13px;
+    margin-left: 5px;
+    font-family: apple-system;
+}
+.likes{
+    flex: 1;
+    margin-left: 5px;
+}
+.card-body-text{
+    display: flex;
+    width: 100%;
+    align-items: center;
+   
+}
+.card-body-text h3{
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: rgb(99, 97, 97);
+    font-family: apple-system;
+
+}
+.card-body-text h5{
+    font-size: 12px;
+    color: rgb(92, 89, 89);
+    font-family: apple-system;
+   
+}
+.text-last{
+    display: flex;
+}
+.text-last i{
+    font-size: 13px;
+    margin-left: 5px;
+    color: rgb(92, 89, 89);
+    font-family: apple-system;
+}
+.align{
+    padding-left: 6px;
+    padding-top: 15px;
+    
+}
+.dis-text{
+    padding: 8px 0px;
+    color: rgb(85, 80, 80);
+    font-size: 14px;
+    font-family: apple-system;
+}
+.card-body-image{
+    width: 100%;
+}
+.card-body-image img{
+    width: 100%;
+}
+/* ---------------------------- */
+.card-body-likes{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #00000099;
+    padding-bottom: 5px;
+}
+.card-body-likes h2{
+   font-size: 12px;
+   color: rgb(37, 35, 35);
+   font-family: apple-system;
+}
+.likes-emoji{
+    display: flex;
+}
+.card-body-icons{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+    color: #00000099;
+}
+.card-body-i{
+    display: flex;
+    
+    align-items: center;
+}
+.card-body-icons h2{
+    font-size: 12px;
+    color: #00000099;
+    font-family: apple-system;
+}
+.right-top{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.top-top{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+
+
+    line-height: 10px;
+    margin:0;
+    color: #272525;
+}
+
+
+.top-ul {
+    padding-left: 0;
+    list-style-position: inside;
+
+    
+  }
+li{
+    align-items: center;
+    align-content: center;
+   
+}
+li:hover{
+    background-color: whitesmoke;
+}
+.small{
+    list-style-type: none;
+    font-size: 12px;
+    padding-left: 23px;
+    padding-top: 3px;
+    margin-bottom: 15px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+
+}
+.big{
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 6px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+}
+.show-more{
+  display: flex;
+  font-size: 13px;
+  margin: 8px 11px;
+  width: fit-content;
+  padding: 10px;
+    
+}
+.show-more:hover{
+    background-color: whitesmoke;
+}
+.right-main{
+    padding: 0px 5px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.main-right{
+    background-color: transparent;
+}
+.right-bottom{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+
+    
+}
+.bottom-nav-item{
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    
+   
+
+}
+a{
+    color: #38434f;
+}
+.bottom-nav-item a{
+    margin: 10px 0px 5px 15px;
+}
+
+
+.terms{
+    display: flex;
+}
+.linkedinc{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}

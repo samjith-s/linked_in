@@ -1,0 +1,722 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linked in</title>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/21c3e82c2e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <!-- navleft starts -->
+            <div class="nav-bar-left">
+                <img src="data:image/png;base64,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" alt="">
+                <div class="input">                    
+
+                        
+                        <i class="material-icons"> search</i>
+                        <input type="text" placeholder="search jobs..." class="input-bar" >
+                   
+                </div>
+            </div>
+            <!-- navleft ends -->
+            <!-- navmain starts -->
+            <div class="nav-m">
+            <div class="nav-main">
+                <div class="nav-main-item">
+                    <i class="material-icons" id="nav-small1">
+                        house
+                    </i>
+                    <h4>Home</h4>
+
+                </div>
+                <div class="nav-main-item">
+                    <i class="material-icons" id="nav-small"
+                    >
+                        group
+                    </i>
+                    <h4>My Network</h4>
+
+                </div>
+                <div class="nav-main-item ">
+                    <i class="material-icons" >
+                        work_outline
+                    </i>
+                    <h4>Jobs</h4>
+
+                </div>
+                <div class="nav-main-item "> 
+                    <i class="fas fa-comment-dots"></i>
+                    <h4>Messages</h4>
+
+                </div>
+                <div class="nav-main-item">
+                    <i class="material-icons">
+                        notifications
+                    </i>
+                    <h4>Notifications</h4>
+
+                </div>
+                <div class="nav-main-item nav-small">
+                    <i class="material-icons">
+                        account_circle
+                    </i>
+                    <h4>Me</h4>
+
+                </div>
+            </div>
+            <div class="nav-main" id="left-main">
+                <div class="nav-main-item " id="work">
+                    <i class="material-icons">
+                        apps
+                    </i>
+                    <h4>Work</h4>
+
+                </div>
+                <div class="nav-main-item">
+                    
+                    <h4>Try Premium for free</h4>
+
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- main body starts -->
+    <main>
+        <div class="main">
+            <div class="main-left">
+            
+                <div class="main-left-top">
+                
+                    <div class="top">
+                    
+                        <div class="cover">
+                        
+                            
+                        </div>
+                        <div class="img-left">
+                            <img src="../assets/images/my.png" alt="">
+                            <h4>Samjith Sam</h4>
+                            <h6>Flutter developer</h6>
+                        </div>
+                    </div>
+                    <div class="leftber-item">
+                         <div class="connections">
+                             <h3>Connections</h3>
+                             <img src="../assets/images/cnct.png" alt="">
+                        </div>                              
+                        
+                        <h4>Grow your network</h4>
+                    </div>
+                    <div class="leftber-item">
+                        <h3>Access exlusive tools & insights</h4>
+                            <div id="connect">
+                                <img src="../assets/images/premium.png" style="padding-right: 5px;" alt="">
+                                <h4>Try Premium for free</h4>
+                           </div>
+                    </div>
+                    <div class="leftber-item" id="gnet">
+                        <i class="fas fa-bookmark" style="padding-right: 5px;"></i>
+                        <h4>Grow your network</h4>
+                    </div>
+                </div>
+                <div class="bottom-left">
+                    <div class="bottom-items">
+                        <a href=""><h3>Groups</h3></a>
+                    </div>
+                    <div class="bottom-items" id="add-icon-div">
+                        <a href=""><h3>Events</h3></a>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="bottom-items">
+                        <a href=""><h3>Followed Hashtags</h3></a>
+                    </div>
+                
+                    <div class="left-end">
+                    <h4>Discover  more</h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-body">
+                <div class="main-body-top">
+                    <div class="body-top-input">
+                        <img src="../assets/images/my2.png" alt="">
+                        <input type="text" placeholder="Start a post">
+                        
+
+                    </div>
+                    <div class="body-top-icons">
+                        <div class="body-top-icon">
+                            <i class="far fa-image"></i>
+                            <h3>Photo</h3>
+
+                        </div>
+                        <div class="body-top-icon">
+                            <i class="fab fa-youtube"></i>
+                            <h3>Video</h3>
+
+                        </div>
+                        <div class="body-top-icon">
+                            <i class="far fa-calendar"></i>
+                            <h3>Event</h3>
+
+                        </div>
+                        <div class="body-top-icon">
+                            <img src="../assets/images/article.png" alt="">
+                            <h3>Write article</h3>
+
+
+                        </div>
+                        
+                        
+                        
+                        
+
+                    </div>
+
+                   
+                </div>
+                 <!-- ---------------------------------------------------------------------- -->
+                 <div class="divider">
+                    <div class="line">
+                       <hr>
+                    </div>
+                    <div class="left-content">
+                        <h4>Sort by:</h4>
+                        <h3>Top</h3>
+                        <i class="fas fa-caret-down"></i>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+
+                    
+                    <div class="card-body">
+                        <div class="card-body-top">
+                            <img src="../assets/images/ibm.png" alt="">
+                            <h3>IBM</h3>
+                            <div class="likes">
+                                <h4>likes this</h4>
+                            </div> 
+                            <i class="fas fa-ellipsis-h"></i>
+
+                            
+
+
+                        </div>
+                        <div class="card-body-text">
+                             <img src="../assets/images/juan.png" alt="">
+                             <div class="align"> 
+                                <h3>
+                                    Juan carlos Coronado Velasquez . 3rd +
+                                </h3>
+                                <h5>Java Microservices Developer</h5>
+                                <div class="text-last">
+                                    <h5>6h . </h5>
+                                    <i class="fas fa-globe-americas"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body-dis">
+                            <div class="dis-text">
+                                <h4>amazing course!! Are you a recent graduate, passionate to change how the world learns? Join a dynamic team at BYJU’S to help students learn better!</h4>
+                              
+                            </div>
+                        </div>
+                        <div class="card-body-image">
+                            <img src="https://media-exp1.licdn.com/dms/image/C5622AQFT74eND6MilQ/feedshare-shrink_800/0/1644185747124?e=1646870400&v=beta&t=jDbUlemDDNWKJPZsMvkEpc2bfTrtBfyMwqHDzBPwtHI" alt="">
+                            
+
+                        </div>
+                        <div class="card-body-likes">
+                            <div class="likes-emoji">
+                                <img src="../assets/images/lemoji.png" alt="">
+                                <h2>401</h2>
+                            </div>
+                            <div class="likes-text">
+                                <h2>11 comments</h2>
+                            </div>
+
+                        </div>
+                        <div class="card-body-icons">
+                            <div class="card-body-i">
+                                <img src="../assets/images/like.png" alt="">
+                                <h2>Like</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/coment.png" alt="">
+                                <h2>Comment</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/arrow.png" alt="">
+                                <h2>Share</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/send.png" alt="">
+                                <h2>Send</h2>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+
+                    
+                    <div class="card-body">
+                        <div class="card-body-top">
+                            <img src="../assets/images/accent.png" alt="">
+                            <h3>Accenture</h3>
+                            <div class="likes">
+                                <h4>commented on this
+                                </h4>
+                            </div> 
+                            <i class="fas fa-ellipsis-h"></i>
+
+                            
+
+
+                        </div>
+                        <div class="card-body-text">
+                             <img src="../assets/images/julia.png" alt="">
+                             <div class="align"> 
+                                <h3>
+                                    Julia Sheehan . 3rd +
+                                </h3>
+                                <h5>Java Microservices Developer</h5>
+                                <div class="text-last">
+                                    <h5>6h . </h5>
+                                    <i class="fas fa-globe-americas"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body-dis">
+                            <div class="dis-text">
+                                <h4>Very exciting delivery for a Monday morning! <br> As I begin my last ever semester of college, I’m so excited to announc...see more</h4>
+                              
+                            </div>
+                        </div>
+                        <div class="card-body-image">
+                            <img src="https://media-exp1.licdn.com/dms/image/C4D22AQGfKGQJLbp6Ng/feedshare-shrink_800/0/1643026280714?e=1646870400&v=beta&t=SmjditWHxDiqWDox90KlTC-POeclKDDoi6CPB98ktKY" alt="">
+                            
+
+                        </div>
+                        <div class="card-body-likes">
+                            <div class="likes-emoji">
+                                <img src="../assets/images/lemoji.png" alt="">
+                                <h2>401</h2>
+                            </div>
+                            <div class="likes-text">
+                                <h2>11 comments</h2>
+                            </div>
+
+                        </div>
+                        <div class="card-body-icons">
+                            <div class="card-body-i">
+                                <img src="../assets/images/like.png" alt="">
+                                <h2>Like</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/coment.png" alt="">
+                                <h2>Comment</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/arrow.png" alt="">
+                                <h2>Share</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/send.png" alt="">
+                                <h2>Send</h2>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+
+                    
+                    <div class="card-body">
+                        <div class="card-body-top">
+                            <img src="../assets/images/ibm.png" alt="">
+                            <h3>IBM</h3>
+                            <div class="likes">
+                                <h4>likes this</h4>
+                            </div> 
+                            <i class="fas fa-ellipsis-h"></i>
+
+                            
+
+
+                        </div>
+                        <div class="card-body-text">
+                             <img src="../assets/images/juan.png" alt="">
+                             <div class="align"> 
+                                <h3>
+                                    Juan carlos Coronado Velasquez . 3rd +
+                                </h3>
+                                <h5>Java Microservices Developer</h5>
+                                <div class="text-last">
+                                    <h5>6h . </h5>
+                                    <i class="fas fa-globe-americas"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body-dis">
+                            <div class="dis-text">
+                                <h4>amazing course!! Are you a recent graduate, passionate to change how the world learns? Join a dynamic team at BYJU’S to help students learn better!</h4>
+                              
+                            </div>
+                        </div>
+                        <div class="card-body-image">
+                            <img src="https://media-exp1.licdn.com/dms/image/C5622AQGt06_78PjlGg/feedshare-shrink_800/0/1643115373104?e=1646870400&v=beta&t=kqKDh84jWB1FqqL3lCXhAm9t0fUmAoKOB6Chl_HZ77U" alt="">
+                            
+
+                        </div>
+                        <div class="card-body-likes">
+                            <div class="likes-emoji">
+                                <img src="../assets/images/lemoji.png" alt="">
+                                <h2>401</h2>
+                            </div>
+                            <div class="likes-text">
+                                <h2>11 comments</h2>
+                            </div>
+
+                        </div>
+                        <div class="card-body-icons">
+                            <div class="card-body-i">
+                                <img src="../assets/images/like.png" alt="">
+                                <h2>Like</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/coment.png" alt="">
+                                <h2>Comment</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/arrow.png" alt="">
+                                <h2>Share</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/send.png" alt="">
+                                <h2>Send</h2>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+
+                    
+                    <div class="card-body">
+                        <div class="card-body-top">
+                            <img src="../assets/images/ibm.png" alt="">
+                            <h3>IBM</h3>
+                            <div class="likes">
+                                <h4>likes this</h4>
+                            </div> 
+                            <i class="fas fa-ellipsis-h"></i>
+
+                            
+
+
+                        </div>
+                        <div class="card-body-text">
+                             <img src="../assets/images/juan.png" alt="">
+                             <div class="align"> 
+                                <h3>
+                                    Juan carlos Coronado Velasquez . 3rd +
+                                </h3>
+                                <h5>Java Microservices Developer</h5>
+                                <div class="text-last">
+                                    <h5>6h . </h5>
+                                    <i class="fas fa-globe-americas"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body-dis">
+                            <div class="dis-text">
+                                <h4>amazing course!! Are you a recent graduate, passionate to change how the world learns? Join a dynamic team at BYJU’S to help students learn better!</h4>
+                              
+                            </div>
+                        </div>
+                        <div class="card-body-image">
+                            <img src="https://media-exp1.licdn.com/dms/image/sync/C5634AQFVuf7FphaYsw/ugc-proxy-shrink_1280_800/0/1630567584734?e=1644310800&v=beta&t=wkWEegF966t88FTVtlz8SUU0L2kNn3T9iqU3MdvNcAA" alt="">
+                            
+ 
+                        </div>
+                        <div class="card-body-likes">
+                            <div class="likes-emoji">
+                                <img src="../assets/images/lemoji.png" alt="">
+                                <h2>401</h2>
+                            </div>
+                            <div class="likes-text">
+                                <h2>11 comments</h2>
+                            </div>
+
+                        </div>
+                        <div class="card-body-icons">
+                            <div class="card-body-i">
+                                <img src="../assets/images/like.png" alt="">
+                                <h2>Like</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/coment.png" alt="">
+                                <h2>Comment</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/arrow.png" alt="">
+                                <h2>Share</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/send.png" alt="">
+                                <h2>Send</h2>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+
+                    
+                    <div class="card-body">
+                        <div class="card-body-top">
+                            <img src="../assets/images/ibm.png" alt="">
+                            <h3>IBM</h3>
+                            <div class="likes">
+                                <h4>likes this</h4>
+                            </div> 
+                            <i class="fas fa-ellipsis-h"></i>
+
+                            
+
+
+                        </div>
+                        <div class="card-body-text">
+                             <img src="../assets/images/juan.png" alt="">
+                             <div class="align"> 
+                                <h3>
+                                    Juan carlos Coronado Velasquez . 3rd +
+                                </h3>
+                                <h5>Java Microservices Developer</h5>
+                                <div class="text-last">
+                                    <h5>6h . </h5>
+                                    <i class="fas fa-globe-americas"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body-dis">
+                            <div class="dis-text">
+                                <h4>amazing course!! Are you a recent graduate, passionate to change how the world learns? Join a dynamic team at BYJU’S to help students learn better!</h4>
+                              
+                            </div>
+                        </div>
+                        <div class="card-body-image">
+                            <img src="https://media-exp1.licdn.com/dms/image/C5622AQFT74eND6MilQ/feedshare-shrink_800/0/1644185747124?e=1646870400&v=beta&t=jDbUlemDDNWKJPZsMvkEpc2bfTrtBfyMwqHDzBPwtHI" alt="">
+                            
+
+                        </div>
+                        <div class="card-body-likes">
+                            <div class="likes-emoji">
+                                <img src="../assets/images/lemoji.png" alt="">
+                                <h2>401</h2>
+                            </div>
+                            <div class="likes-text">
+                                <h2>11 comments</h2>
+                            </div>
+
+                        </div>
+                        <div class="card-body-icons">
+                            <div class="card-body-i">
+                                <img src="../assets/images/like.png" alt="">
+                                <h2>Like</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/coment.png" alt="">
+                                <h2>Comment</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/arrow.png" alt="">
+                                <h2>Share</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/send.png" alt="">
+                                <h2>Send</h2>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+
+                    
+                    <div class="card-body">
+                        <div class="card-body-top">
+                            <img src="../assets/images/ibm.png" alt="">
+                            <h3>IBM</h3>
+                            <div class="likes">
+                                <h4>likes this</h4>
+                            </div> 
+                            <i class="fas fa-ellipsis-h"></i>
+
+                            
+
+
+                        </div>
+                        <div class="card-body-text">
+                             <img src="../assets/images/juan.png" alt="">
+                             <div class="align"> 
+                                <h3>
+                                    Juan carlos Coronado Velasquez . 3rd +
+                                </h3>
+                                <h5>Java Microservices Developer</h5>
+                                <div class="text-last">
+                                    <h5>6h . </h5>
+                                    <i class="fas fa-globe-americas"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body-dis">
+                            <div class="dis-text">
+                                <h4>amazing course!! Are you a recent graduate, passionate to change how the world learns? Join a dynamic team at BYJU’S to help students learn better!</h4>
+                              
+                            </div>
+                        </div>
+                        <div class="card-body-image">
+                            <img src="https://media-exp1.licdn.com/dms/image/C5622AQFT74eND6MilQ/feedshare-shrink_800/0/1644185747124?e=1646870400&v=beta&t=jDbUlemDDNWKJPZsMvkEpc2bfTrtBfyMwqHDzBPwtHI" alt="">
+                            
+
+                        </div>
+                        <div class="card-body-likes">
+                            <div class="likes-emoji">
+                                <img src="../assets/images/lemoji.png" alt="">
+                                <h2>401</h2>
+                            </div>
+                            <div class="likes-text">
+                                <h2>11 comments</h2>
+                            </div>
+
+                        </div>
+                        <div class="card-body-icons">
+                            <div class="card-body-i">
+                                <img src="../assets/images/like.png" alt="">
+                                <h2>Like</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/coment.png" alt="">
+                                <h2>Comment</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/arrow.png" alt="">
+                                <h2>Share</h2>
+                            </div>
+                            <div class="card-body-i">
+                                <img src="../assets/images/send.png" alt="">
+                                <h2>Send</h2>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="main-right">
+                <div class="right-top">
+                    <div class="top-top">
+                        <h2>Linkedin News</h2>
+                        <img src="../assets/images/i.png" alt="">
+                    </div>
+                    <div class="top-ul">
+                        <li class="big">The top career experts to follow</h3></li>
+                        <li class="small">top news .43,241 readers</h4></li>
+                        <li class="big"> What's next for the Paytm stock?</h3></li>
+                        <li class="small">top news .43,241 readers</h4></li>
+                        <li class="big"> Meta sinks on disappointing results</h3></li>
+                        <li class="small">top news .43,241 readers</h4></li>
+                        <li class="big"> Fewer women in leadership roles</h3></li>
+                        <li class="small">top news .43,241 readers</h4></li>
+                        <li class="big"> India's unemployment rate declines</h3></li>
+                        <li class="small">top news .43,241 readers</h4></li>
+                        <div class="show-more">
+                            <h3>Show more </h3>
+                            <img src="../assets/images/showmore.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="right-main">
+                    <img src="https://static-exp1.licdn.com/scds/common/u/images/promo/ads/li_evergreen_jobs_ad_300x250_v1.jpg" alt="">
+
+                </div>
+                <div class="right-bottom">
+                    <div class="bottom-nav-item">
+                        <a href=""><h3>About</h3></a>
+                        <a href=""><h3>Accessibility</h3></a>
+                        <a href=""><h3>Help Center</h3></a>
+                    </div>
+                    <div class="bottom-nav-item">
+                        <div class="terms">
+                            <a href=""><h3>Privacy & Terms</h3></a>
+                            <img src="../assets/images/showmore.png" alt="">
+                        </div>
+                        <a href=""><h3>Ad choices</h3></a>
+
+                    </div>
+                    <div class="bottom-nav-item">
+                        <a href=""><h3>Advertising</h3></a>
+                        <div class="terms">
+
+                            <a href=""><h3>Business Services</h3></a>
+                            <img src="../assets/images/showmore.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="bottom-nav-item">
+                        
+                        <a href=""><h3>Get the Linkedin app</h3></a>
+                        <a href=""><h3>More</h3></a>
+
+                    </div>
+                    <div class="linkedinc">
+                        <img src="../assets/images/last.png" alt="">
+                        <h3>Linkedin Corporation @ 2022</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+
+
+    <!-- main body ends -->
+    
+</body>
+</html>
